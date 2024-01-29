@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Play', sans-serif;
+}
+h1{
+  color:#ffffff;
+  font-family: 'Play', bold;
+  font-weight: 700;
+  font-size: 72;
+  text-align: center;
+  text-decoration: underline;
+}
+h2{
+  color:black;
+  font-family: 'Play', sans-serif;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+/*Header*/
+header {
+  background-color: #00c3ff;
+    text-align: center;
+    height: 6rem;
+    padding-top: 2rem;
+    width: 100vw;
+}
+.filters {
+  margin-top: 1.5rem;
+  padding-top: 1.2rem;
+  width: 100vw;
+}
+/*Body*/
+body{
+  overflow-x: hidden;
+}
+.filter {
+  color: #ffffff;
+  justify-content: flex-start;
+  margin-right: 2rem;
+  font-family: 'Play', bold;
+  border-radius: 1rem;
+  width: 15rem;
+  background: linear-gradient(to bottom right, #ffff00, #000000);
+  border-color: linear-gradient(to bottom left, #ffff00, #000000);    
+}  
+.filter:hover {
+  color: #00ff00;
+}
+/*Cards*/
+#container {
+  background-image: url(img/OIP.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  padding: 4rem;
+  justify-content: center;
+  width: 100vw;
+  flex-wrap: wrap;
+}
+.card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.card img {
+  border-radius: 50%;
+  border-color: #ffffff;
+  border-style: solid;
+  border-width: 10px;
+}
+.card img:hover {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+li {
+  font-family: 'Play', sans-serif;
+  color: #000000;
+  font-size: 1rem;
+  display: block;
+  font-weight: bold;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+.button {
+  color: #ffffff;
+  border-style: solid;
+  width: 15rem;
+  background: linear-gradient(to bottom right,#ffff00, #000000);
+  border-color: linear-gradient(to bottom left, #ffff00, #000000);
+  border-radius: 1rem;
+}
+.button:hover {
+  color: #00ff00;
+}
+.button-detail {
+  color: #ffffff;
+  border-style: solid;
+  width: 15rem;
+  background: linear-gradient(to bottom right, #ffff00, #000000);
+  border-color: linear-gradient(to bottom left,#ffff00, #000000);
+  border-radius: 1rem;
+  margin-left: 2rem;
+}
+/*Siguiente Página*/
+.page {
+  background-color:#00c3ff;
+  height: 3rem;
+  text-align: center;
+  padding: 0.5rem;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+}
+.prevNext {
+  color: #ffffff;
+  background: linear-gradient(to bottom right, #ffff00, #000000);
+  border-color: linear-gradient(to bottom left,#ffff00, #000000);
+  box-shadow: none;
+  font-family: 'Play', sans-serif;
+  border-radius: 25%;
+}
+.prevNext:hover {
+  color: #00ff00;
+}
+.hr1{
+  height: 20px;
+  background-color: #00ff00;
+  background-image: repeating-linear-gradient(-45deg, #ffff00, #000000, 10px, transparent 10px, transparent 20px);
+}
+.hr2{
+  height: 20px;
+  background-color: #00ff00;
+  background-image: repeating-linear-gradient(45deg, #ffff00, #000000, 10px, transparent 10px, transparent 20px);
+}
+/*Footer*/
+footer {
+  background-color: #ffe600;
+  color: #9400fd;
+  font-size: 2rem;
+  height: 4rem;
+  text-align: center;
+  padding: 1rem;
+  width: 100vw;
+}
+/*Hacer el diseño responsive: */
+@media (max-width :1200px) and (min-width: 375px) {
+  body {
+
+    justify-content: center;
+  
+  }
+  .filter {
+      background: linear-gradient(to bottom right, #ff0000, #9400fd);
+      width: 15rem;
+      color: #00facc;
+      margin-bottom: 5px;
+  }
+  .card {
+      margin-top: 2rem;
+  }
+  .page {
+    background-color:#feba3b;
+  }
+  h1{
+    color:#000000;
+    font-family: 'Play', bold;
+    font-weight: 700;
+    font-size: 72;
+    text-align: center;
+    text-decoration: underline;
+  }
+  footer {
+    background-color: #0cb400;
+    color: #000ac1;
+    font-size: 1.2rem;
+    height: 4rem;
+    text-align: center;
+    padding-top: 1.5rem;
+    width: 100vw;
+  }
+  header {
+    background-color: #ff6a00;
+      text-align: center;
+      width: auto;
+      height: auto;
+    }
+    .filter:hover {
+      color: #ffffff;
+    }
+}

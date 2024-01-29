@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <title>Rick and Morty by IMB</title>
+    <meta name="description" content="Proyecto Final ADA, en el cuál se muestra el listado
+    de los personajes de la serie Rick and Morty utilizando una API REST real.">
+    <meta name="keywords" content="Rick Sánchez, Morty Smith, Jerry Smith, Beth Smith, Summer Smith, Jessica, Sr. Goldenfold">
+    <link rel="shortcut icon" href="./img/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <header>
+        <h1>Proyecto Final ADA</h1>
+        <nav class="filters">
+            <button class="filter" id="todos">Todos</button>
+            <button class="filter" id="sin-genero">Sin Género</button>
+            <button class="filter" id="mujeres">Mujeres</button>
+            <button class="filter" id="hombres">Hombres</button>
+            <button class="filter" id="desconocido">Desconocido</button>
+        </nav>
+    </header>
+    <main>
+      <div class="container" id="container">
+      </div>
+      <hr class="hr1">
+      <div class="page">
+      <button class="prevNext" id="prevButton" >Página Anterior</button>
+      <button class="prevNext" id="nextButton" >Página Siguiente</button>
+      </div>
+      <hr class="hr2">
+    </main>
+    <footer>
+        Desarrollado por Iván Bustos en Enero de 2024
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
